@@ -1,0 +1,7 @@
+quarkus:
+  http:
+    port: 8099
+  log:
+    category:
+      "com.example":
+        level: DEBUG
