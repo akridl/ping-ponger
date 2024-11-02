@@ -5,7 +5,7 @@ COPY src/ src/
 COPY pom.xml .
 RUN mvn verify
 
-FROM openjdk-21-runtime:1.20-2.1724181173
+FROM registry.access.redhat.com/ubi8/openjdk-21-runtime:1.20-2.1729089290
 WORKDIR /app
 COPY --from=build /app/target/ping-ponger-runner.jar .
 EXPOSE 8099
