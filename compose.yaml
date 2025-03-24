@@ -1,0 +1,8 @@
+---
+services:
+  ping-ponger:
+    container_name: ping-ponger
+    image: quay.io/rh-ee-akridl/ping-ponger:1.0
+    ports:
+      - '8099:8099'
+
